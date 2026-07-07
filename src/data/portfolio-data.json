@@ -1,0 +1,118 @@
+{
+  "projects": [
+    {
+      "id": "school-management",
+      "title": "Darul Uloom School Management System",
+      "description": "Full-stack school management platform for Darul Uloom Faizan-E-Ashraf with authentication, an admin dashboard, dynamic routing, and a 13-table PostgreSQL schema covering students, staff, and academics.",
+      "tags": ["Next.js", "Supabase", "PostgreSQL", "TypeScript", "Tailwind CSS"],
+      "status": "live",
+      "category": "web",
+      "liveUrl": "https://faizaneashraf.in",
+      "githubUrl": "https://github.com/muhammedmubashir786/faizan-e-ashraf-website",
+      "featured": true
+    },
+    {
+      "id": "attendance-management",
+      "title": "Attendance Management System",
+      "description": "Web-based attendance tracking system built for institutional use, with role-based access and real-time record keeping backed by Supabase.",
+      "tags": ["Next.js", "Supabase", "TypeScript"],
+      "status": "live",
+      "category": "web",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/muhammedmubashir786",
+      "featured": false
+    },
+    {
+      "id": "csa-exam-simulator",
+      "title": "CSA Exam Simulator",
+      "description": "Practice exam simulator for the EC-Council Certified SOC Analyst exam, with scenario-based questions covering the incident response lifecycle, SIEM, and MITRE ATT&CK.",
+      "tags": ["JavaScript", "Cybersecurity", "SOC"],
+      "status": "live",
+      "category": "security",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/muhammedmubashir786/csaexamsimulator",
+      "featured": true
+    },
+    {
+      "id": "phishora",
+      "title": "PHISHORA v2.0",
+      "description": "Full-stack phishing threat intelligence platform integrating VirusTotal, HaveIBeenPwned, and OpenPhish feeds, with a phishing email analyzer and breach checker.",
+      "tags": ["Node.js", "Express", "React", "Vite"],
+      "status": "live",
+      "category": "security",
+      "liveUrl": "https://phishoracom.vercel.app",
+      "githubUrl": "https://github.com/muhammedmubashir786/phishora.com",
+      "featured": true
+    },
+    {
+      "id": "good-ledger",
+      "title": "Good Ledger Financial",
+      "description": "Financial services website built to present accounting and ledger-management offerings with a clean, trustworthy business front end.",
+      "tags": ["Next.js", "Tailwind CSS"],
+      "status": "live",
+      "category": "web",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/muhammedmubashir786/goodledgerfinancial",
+      "featured": false
+    },
+    {
+      "id": "mugly-cafe",
+      "title": "Mugly Café Order System",
+      "description": "Order management system for cafés with waiter, kitchen, admin, and customer QR-menu panels, and real-time order tracking.",
+      "tags": ["Next.js", "Supabase", "Tailwind CSS"],
+      "status": "live",
+      "category": "web",
+      "liveUrl": "https://kmuglycafe.vercel.app",
+      "githubUrl": "https://github.com/muhammedmubashir786/muglycafe",
+      "featured": false
+    },
+    {
+      "id": "majlis-menu",
+      "title": "Majlis Restaurant QR Menu",
+      "description": "Digital QR-based restaurant menu with an Islamic luxury aesthetic, real-time sync, and 130+ items across 16 categories.",
+      "tags": ["Next.js", "Supabase", "Realtime"],
+      "status": "live",
+      "category": "web",
+      "liveUrl": "https://qrmenumajlis.vercel.app",
+      "githubUrl": "https://github.com/muhammedmubashir786/majlis-menu",
+      "featured": false
+    },
+    {
+      "id": "scanpee-pos",
+      "title": "Scanpee POS App",
+      "description": "Point-of-sale app for retail businesses with inventory tracking, sales records, and PDF export, built on Flutter Clean Architecture.",
+      "tags": ["Flutter", "SQLite", "PDF Export"],
+      "status": "in-progress",
+      "category": "mobile",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/muhammedmubashir786/scanpee-pos",
+      "featured": false
+    }
+  ],
+  "certifications": [
+    {
+      "id": "csa",
+      "title": "Certified SOC Analyst (CSA)",
+      "issuer": "EC-Council",
+      "year": "2025",
+      "status": "completed",
+      "credentialUrl": ""
+    },
+    {
+      "id": "cicsa",
+      "title": "Certified Information & Cyber Security Analyst (CICSA)",
+      "issuer": "Red Team Academy",
+      "year": "2025",
+      "status": "completed",
+      "credentialUrl": ""
+    },
+    {
+      "id": "google-cyber",
+      "title": "Google Cybersecurity Professional Certificate",
+      "issuer": "Google",
+      "year": "2024",
+      "status": "completed",
+      "credentialUrl": ""
+    }
+  ]
+}
