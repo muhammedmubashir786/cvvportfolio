@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { LogoutButton } from "@/components/admin/LogoutButton";
+import { AdminNav } from "@/components/admin/AdminNav";
 
 // This runs on the SERVER before any /admin page renders. Because it's a
 // layout, it wraps every route under /admin automatically — we only have
@@ -33,11 +34,14 @@ export default async function AdminLayout({
   }
 
   return (
-    <div>
-      <div className="section-container flex justify-end pt-6">
-        <LogoutButton />
+    <div className="min-h-screen bg-bg px-6 py-8">
+      <div className="mx-auto max-w-4xl">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <AdminNav />
+          <LogoutButton />
+        </div>
+        <div className="mt-8">{children}</div>
       </div>
-      {children}
     </div>
   );
 }
