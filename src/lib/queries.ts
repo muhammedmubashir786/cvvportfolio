@@ -4,6 +4,7 @@ import type {
   Profile,
   Project,
   Skill,
+  TerminalCommand,
   TimelineEntry,
 } from "@/types";
 
@@ -104,4 +105,23 @@ export async function getTimeline(): Promise<TimelineEntry[]> {
   return [...fromExperience, ...fromEducation].sort((a, b) =>
     (a.start_date ?? "").localeCompare(b.start_date ?? "")
   );
+}
+
+// Custom/extensible terminal commands beyond the built-in ones (help,
+// whoami, skills, projects, etc. read from their own tables directly).
+// This table lets you add NEW commands from the admin dashboard without
+// touching code.
+export async function getTerminalCommands(): Promise<TerminalCommand[]> {
+  const supabase = await createClient();
+  const { data, error } = await supabase
+    .from("terminal_commands")
+    .select("*")
+    .eq("is_active", true)
+    .order("sort_order", { ascending: true });
+
+  if (error) {
+    console.error("getTerminalCommands failed:", error.message);
+    return [];
+  }
+  return data ?? [];
 }

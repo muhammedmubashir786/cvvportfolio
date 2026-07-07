@@ -51,6 +51,14 @@ export interface Certification {
   sort_order: number;
 }
 
+export interface TerminalCommand {
+  id: string;
+  command: string;
+  response: unknown; // jsonb - shape is up to whoever adds the command
+  is_active: boolean;
+  sort_order: number;
+}
+
 // Experience and Education are separate tables, but the timeline UI
 // displays them merged into one chronological list.
 export interface TimelineEntry {
